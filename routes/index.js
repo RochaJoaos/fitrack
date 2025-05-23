@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 /* LOG IN */
 
 router.get('/login', function(req, res, next){
-  res.render('login/login', {title: 'Login - FitTrack'})
+  res.render('login/login', {title: 'Entrar - FitTrack'})
 })
 
 router.post('/login', async function(req, res, next){
@@ -23,8 +23,27 @@ router.post('/login', async function(req, res, next){
 
   global.userCode = user.id; // Mudar nome do codigo para o nome no mongo
   global.userEmail = user.email; // Mudar nome do codigo para o nome no mongo
-  res.redirect('/perfis');
+  res.redirect('/home');
 })
 
+/* REGISTER */
+
+router.get('/register', async function(req, res, next) {
+  res.render('register/register', {title: "Cadastro - FitTrack"})
+})
+
+/* HOME */
+
+router.get('/home/training', async function(req, res, next) {
+  res.render('home/training', {title: "Cadastro - FitTrack"})
+})
+
+router.get('/home/video', async function(req, res, next) {
+  res.render('home/video', {title: "video"})
+})
+
+router.get('/home/kcal', async function(req, res, next) {
+  res.render('home/kcal', {title: "Cadastro - FitTrack"})
+})
 
 module.exports = router;
