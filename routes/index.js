@@ -21,9 +21,9 @@ router.post('/login', async function(req, res, next){
 
   const user = await global.database.searchUser({email, password})
 
-  global.userCode = user.id; // Mudar nome do codigo para o nome no mongo
-  global.userEmail = user.email; // Mudar nome do codigo para o nome no mongo
-  res.redirect('/home');
+  global.userCode = user.id;
+  global.userEmail = user.email;
+  res.redirect('/home/training');
 })
 
 /* REGISTER */
@@ -35,15 +35,15 @@ router.get('/register', async function(req, res, next) {
 /* HOME */
 
 router.get('/home/training', async function(req, res, next) {
-  res.render('home/training', {title: "Cadastro - FitTrack"})
+  res.render('training/home', {title: "Cadastro - FitTrack", username: global.userEmail})
 })
 
-router.get('/home/video', async function(req, res, next) {
-  res.render('home/video', {title: "video"})
+router.get('/home/videos', async function(req, res, next) {
+  res.render('videos/home', {title: "video" })
 })
 
-router.get('/home/kcal', async function(req, res, next) {
-  res.render('home/kcal', {title: "Cadastro - FitTrack"})
+router.get('/home/calories', async function(req, res, next) {
+  res.render('calories/home', {title: "Cadastro - FitTrack"})
 })
 
 module.exports = router;
