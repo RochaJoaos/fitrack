@@ -35,7 +35,7 @@ router.get('/register', async function(req, res, next) {
 /* HOME */
 
 router.get('/home/training', async function(req, res, next) {
-  res.render('training/home', {title: "Cadastro - FitTrack", username: global.userEmail})
+  res.render('training/home', {title: "FitTrack"})
 })
 
 router.get('/home/videos', async function(req, res, next) {
@@ -45,5 +45,11 @@ router.get('/home/videos', async function(req, res, next) {
 router.get('/home/calories', async function(req, res, next) {
   res.render('calories/home', {title: "Cadastro - FitTrack"})
 })
+
+function verifyLogin(res)
+{
+  if (!global.userEmail || global.userEmail == "")
+    res.redirect('/login');
+}
 
 module.exports = router;
