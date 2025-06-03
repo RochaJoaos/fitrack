@@ -23,6 +23,7 @@ router.post('/login', async function(req, res, next){
 
   global.userCode = user.id;
   global.userEmail = user.email;
+  
   res.redirect('/home/training');
 })
 
@@ -35,15 +36,16 @@ router.get('/register', async function(req, res, next) {
 /* HOME */
 
 router.get('/home/training', async function(req, res, next) {
-  res.render('training/home', {title: "FitTrack"})
+  verifyLogin(res)
+  res.render('training/home', {title: "FitTrack", user: global.userEmail})
 })
 
 router.get('/home/videos', async function(req, res, next) {
-  res.render('videos/home', {title: "video" })
+  res.render('videos/home', {title: "FitTrack", user: global.userEmail})
 })
 
 router.get('/home/calories', async function(req, res, next) {
-  res.render('calories/home', {title: "Cadastro - FitTrack"})
+  res.render('calories/home', {title: "FitTrack", user: global.userEmail})
 })
 
 function verifyLogin(res)

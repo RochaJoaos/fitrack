@@ -60,6 +60,7 @@ async function searchUser(user) {
   const conect = await conectDB();
   const sql = "select * from user where email=? and password=?;";
   const [userSelected] = await conect.query(sql,[user.email, user.password]);
+  console.log("!!!", user)
   return userSelected && userSelected.length>0 ? userSelected[0] : {};
 
   /*
