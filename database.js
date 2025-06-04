@@ -98,7 +98,6 @@ async function userData(user) {
   await conectDB();
 
   const userFound = await User.find({ id: user }).lean();
-  console.log("!!!AQUI!!!", userFound)
   return userFound;
 }
 
