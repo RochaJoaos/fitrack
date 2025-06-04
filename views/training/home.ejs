@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/training/home.css">
     <title><%= title %></title>
 </head>
 <body>
@@ -25,78 +26,4 @@
         </div>
     </section>
 </body>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "Inter", sans-serif;
-}
-
-:root{
-    --primary-color: #3F8FD5;
-    --second-color: #526B81;
-    --background-color: #fff;
-}
-
-.nav-bar{
-    padding: 5px 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-area{
-    display: flex;
-}
-
-.nav-option{
-    margin: 20px;
-    font-weight: 600;
-    font-size: 18px;
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-.nav-option-selected{
-    padding-bottom: 5px;
-    color: var(--second-color);
-    box-shadow: 0px 3px 0px var(--second-color);
-}
-
-.nav-account{
-    cursor: pointer;
-    display: flex;  
-}
-
-.notraining-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.notraining-title{
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 2em;
-    color: var(--primary-color);
-}
-
-.newtraining-button{
-    cursor: pointer;
-    margin: 5px;
-    padding: 5px 10px;
-    color: var(--background-color);
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-
-}
-
-</style>
 </html>
