@@ -36,7 +36,7 @@ router.get('/register', async function(req, res, next) {
 /* HOME */
 
 router.get('/home/training', async function(req, res, next) {
-  verifyLogin(res)
+  //verifyLogin(res)
   res.render('training/home', {title: "FitTrack", user: global.userEmail})
 })
 

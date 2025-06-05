@@ -10,12 +10,14 @@
     --primary-color: #3F8FD5;
     --second-color: #526B81;
     --background-color: #fff;
+    --subcolor-01: #F5FAFF;
 }
 
 .nav-bar{
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 .nav-area{
@@ -25,7 +27,7 @@
 .nav-option{
     margin: 20px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -42,6 +44,7 @@
 }
 
 .notraining-box{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -49,7 +52,7 @@
     text-align: center;
 }
 
-.notraining-title{
+.training-title{
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 2em;
@@ -66,5 +69,39 @@
     border-radius: 5px;
     font-size: 18px;
     font-family: "Inter", sans-serif;
+    align-items: center;
 
 }
+
+.training-box{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.daily-training{
+    margin-top: 80px;
+    width: 45%;
+}
+
+.status-week{
+    margin-top: 60px;
+    width: 55%; 
+}
+
+.post-it{
+    margin: 60px;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.26);
+    background-color: var(--subcolor-01);
+}
+
+.report{
+    height: 40vh;
+}
+
+.calendar{
+    height: 180px;
+}
+
