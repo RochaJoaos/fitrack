@@ -14,6 +14,7 @@
 
 .nav-bar{
     position: fixed;
+    width: 100%;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
@@ -41,3 +42,4 @@
     cursor: pointer;
     display: flex;  
 }
+
