@@ -11,11 +11,9 @@
     --second-color: #526B81;
     --background-color: #fff;
     --subcolor-01: #F5FAFF;
-    --subcolor-02: rgb(141, 0, 0);
 }
 
 .nav-bar{
-    width: 100%;
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
@@ -29,7 +27,7 @@
 .nav-option{
     margin: 20px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 24px;
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -57,7 +55,7 @@
 .training-title{
     font-family: "Inter", sans-serif;
     font-weight: 800;
-    font-size: 1.4em;
+    font-size: 2em;
     color: var(--primary-color);
 }
 
@@ -72,11 +70,7 @@
     font-size: 18px;
     font-family: "Inter", sans-serif;
     align-items: center;
-}
 
-.newtraining-button:hover, .edittraining-button:hover{
-    color: var(--background-color);
-    background-color: var(--second-color);
 }
 
 .training-box{
@@ -87,80 +81,27 @@
 
 .daily-training{
     margin-top: 80px;
-    width: 40%;
+    width: 45%;
 }
 
 .status-week{
     margin-top: 60px;
-    width: 60%; 
+    width: 55%; 
 }
 
 .post-it{
-    margin: 40px;
-    padding: 20px;
+    margin: 60px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.26);
     background-color: var(--subcolor-01);
 }
 
 .report{
-    height: 250px;
+    height: 40vh;
 }
 
 .calendar{
-    height: 120px;
+    height: 180px;
 }
 
-.training-option{
-    display: flex;
-    padding: 15px;
-}
-
-.deletetraining-button{
-    cursor: pointer;
-    margin: 5px;
-    padding: 5px 10px;
-    color: var(--subcolor-02);
-    background-color: transparent;
-    border: 1px solid var(--subcolor-02);
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    align-items: center;
-}
-
-.deletetraining-button:hover{
-    background-color: var(--subcolor-02);
-    color: var(--background-color);
-}
-
-.edittraining-button{
-    cursor: pointer;
-    margin: 5px;
-    padding: 5px 10px;
-    color: var(--second-color);
-    background-color: transparent;
-    border: 1px solid var(--second-color);
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: "Inter", sans-serif;
-    align-items: center;
-}
-
-.daily-training-body{
-    width: 100%;
-    margin: 0px 20px;
-}
-
-.exercise-box{
-    color: var(--second-color);
-    margin: 5px;
-    padding: 10px;
-    width: 90%;
-    background-color: var(--subcolor-01);
-    border-radius: 10px;
-}
-
-.exercise-title{
-    font-size: 18px;
-}
