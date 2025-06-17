@@ -29,7 +29,7 @@ async function conectDB() {
         port     : 3306, 
         user     : 'root',
         password : '', 
-        database : 'fittrack' 
+        database : 'fitrack' 
     }); 
     
   console.log('Conectou no MySQL!'); 
